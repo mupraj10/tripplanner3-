@@ -8,6 +8,7 @@ var Hotel = require('./models').Hotel;
 var Restaurant = require('./models').Restaurant;
 var Activity = require('./models').Activity;
 
+
 var data = {
   hotel: [
     {name: "Andaz Wall Street", place: {address: "75 Wall St", city: "New York", state: "NY", phone: "123-456-7890", location: [40.705137, -74.007624]}, num_stars: 4, amenities: "Pool, Free Wi-Fi" },

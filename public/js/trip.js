@@ -41,6 +41,7 @@ var tripModule = (function () {
   // jQuery event binding
 
   $(function () {
+    
     $addButton.on('click', addDay);
     $removeButton.on('click', deleteCurrentDay);
   });
@@ -52,8 +53,21 @@ var tripModule = (function () {
     if (days.length === 1) {
       currentDay = newDay;
     }
+    // $.post('/', function(data){
+
+    // })
+    // $.ajax({
+    //     method: 'POST',
+    //     url: '/api/add',
+    //     data: 1
+    //   })
+    //   .then(function (data) {
+    //     console.log(data);
+    //   })
+    //   .catch(console.error.bind(console));
+
     switchTo(newDay);
-  }
+    }
 
   function deleteCurrentDay () {
     // prevent deleting last day

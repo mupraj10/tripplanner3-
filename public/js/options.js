@@ -18,9 +18,9 @@ $(function(){
   var $activitySelect = $optionsPanel.find('#activity-choices');
 
   // make all the option tags (second arg of `forEach` is a `this` binding)
-  hotels.forEach(makeOption, $hotelSelect);
-  restaurants.forEach(makeOption, $restaurantSelect);
-  activities.forEach(makeOption, $activitySelect);
+  // hotels.forEach(makeOption, $hotelSelect);
+  // restaurants.forEach(makeOption, $restaurantSelect);
+  // activities.forEach(makeOption, $activitySelect);
 
   function makeOption (databaseAttraction) {
     var $option = $('<option></option>') // makes a new option tag
@@ -38,5 +38,6 @@ $(function(){
     var attraction = attractionsModule.getByTypeAndId(type, id);
     tripModule.addToCurrent(attraction);
   });
+  
 
 });
